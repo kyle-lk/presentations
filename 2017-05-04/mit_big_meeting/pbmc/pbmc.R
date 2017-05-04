@@ -89,4 +89,4 @@ new.cluster.ids <- c("CD4 T cells", "CD14+ Monocytes", "B cells", "CD8 T cells",
 pbmc@ident <- mapvalues(pbmc@ident,
                         from = current.cluster.ids,
                         to = new.cluster.ids)
-TSNEPlot(pbmc, do.label = T, pt.size = 0.5)
+TSNEPlot(pbmc, do.label = TRUE, pt.size = 0.5)
